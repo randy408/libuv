@@ -20,5 +20,7 @@ int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size)
     uv_ip4_addr(str, port, &addr4);
     uv_ip6_addr(str, port, &addr6);
 
+    free(str);
+
     return 0;
 }
