@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#ifdef __cplusplus
+extern "C"
+#endif
 int LLVMFuzzerTestOneInput(const uint8_t* data, size_t size)
 {
     size_t len = size + 1;
